@@ -365,3 +365,51 @@ footer .linksFooter i{
 footer .linksFooter:hover{
     color: var(--primaryColor--);
 }
+
+/* Products details */
+.productsDetails{
+    font-size: 18px;
+    display: block;
+    margin-right: 8px;
+}
+
+.productsDetails-Share i{
+    font-size: 25px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.evaluateProductsDetais:first-child{
+    padding-left: 0px;
+}
+
+.evaluateProductsDetais:last-child{
+    border-right: none;
+}
+
+.evaluateProductsDetais{
+    padding: 0 15px;
+    border-right: 1px solid var(--products-border);
+}
+
+.evaluateProductsDetais i{
+    color: var(--star-gold);
+}
+
+.informationProducts{
+    align-items: center;
+}
+
+.informationProducts .informationProducts-text{
+    color:#757575;
+    width: 120px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.informationProducts .informationProducts-btn{
+    color:var(--products-text);
+    background: rgba(255,87,34,.1);
+    padding: 8px;
+    font-weight: 500;
+}

@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="../Library/boostrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Css/grid.css">
+    <link rel="stylesheet" href="../Css/base.css">
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+
+<body>
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <div class="header-menu-top">
+                <ul>
+                    <li class="header-menu-topChild">
+                        <a href="" class="header-menu-topLink" style="color: rgb(35, 191, 221);">
+                            cộng tác cùng KShop
+                        </a>
+                    </li>
+                    <li class="header-menu-topChild">
+                        <a href="" class="header-menu-topLink">
+                            chăm sóc khách hàng
+                        </a>
+                    </li>
+                    <li class="header-menu-topChild">
+                        <a href="" class="header-menu-topLink">
+                            kiểm tra đơn hàng
+                        </a>
+                    </li>
+                    <li class="header-menu-topChild">
+                        <a href="" class="header-menu-topLink">
+                            <i class="far fa-bell" style="margin-right: 4px;color: #fff;"></i>thông báo
+                        </a>
+                    </li>
+                    <li class="header-menu-topChild">
+                        <a href="" class="header-menu-topLink">
+                            đăng nhập
+                        </a>
+                    </li>
+                    <li class="header-menu-topChild">
+                        <a href="" class="header-menu-topLink">
+                            đăng kí
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div style="background: rgb(24, 53, 68);border-bottom: 1px solid #11252F;">
+        <div class="container">
+            <div class="header-menu-main">
+                <div class="header-menu-center">
+                    <div class="header-logo">
+                        <img src="../Img/Logo.png" alt="logo">
+                        <span style="font-size: 20px;"><span style="color: #fff;">K</span><span
+                                style="color: rgb(242, 210, 113);text-transform: uppercase;">Shop</span></span>
+                        <div class="input-group mb-3" style="margin-bottom: 0 !important;margin-left: 92px;">
+                            <input type="text" class="form-control"
+                                placeholder="Tìm sản phẩm, thương hiệu hoặc tên shop..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2" style="width:500px;">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" style="background: #FF531D;"><i
+                                        class="fas fa-search" style="color: #fff;"></i></button>
+                            </div>
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <a href="../Clients/cart.html">
+                                <i class="fas fa-shopping-cart" style="color: #fff;
+                                font-size: 24px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: rgb(24, 53, 68);">
+        <div class="container">
+            <div class="header-menu-bottom">
+                <ul class="listMenu">
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">
+                            Bách hóa online
+                        </a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Đồ chơi</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Đồng hồ</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Giày dép nam</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Giày dép nữ</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Máy ảnh - Máy quay phim</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Máy tính & Laptop</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Nhà sách online</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Ô tô - Xe máy - Xe đạp</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Phụ kiện thời trang</a></li>
+                    <li class="itemsMenu"><a href="" class="linksMenuBottom">Sức khỏe và sắc đẹp</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Mã giảm giá</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Gian hàng chính hãng</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4">
+                            <img src="../Img/banner-khuyen-mai-01.jpg" class="img-fluid">
+                        </div>
+                        <div class="col l-4">
+                            <img src="../Img/banner-khuyen-mai-02.jpg" class="img-fluid">
+                        </div>
+                        <div class="col l-4">
+                            <img src="../Img/banner-khuyen-mai-03.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 mb-2" style="display: flex;justify-content: space-between;align-items: center;">
+                    <div>
+                        <img src="../Img/flash-sale.png" style="width: 32%;">
+                    </div>
+                    <div>
+                        <a href="">Xem tất cả ></a>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper" style="background: #fff;padding: 20px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/DamTaiTho-02.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 125.000</p>
+                                    <div class="btnSold">Đã bán 41</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/GauOm-01-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 100.000</p>
+                                    <div class="btnSold">Đã bán 11</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/GiayNam-01-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 300.000</p>
+                                    <div class="btnSold">Đã bán 30</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/iphone8-01-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 2.000.000</p>
+                                    <div class="btnSold">Đã bán 21</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/TaiNghe-Xiaomi-01-300x300.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 200.000</p>
+                                    <div class="btnSold">Đã bán 29</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/Balo-01.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 200.000</p>
+                                    <div class="btnSold">Đã bán 29</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/ban-tron-03-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 200.000</p>
+                                    <div class="btnSold">Đã bán 29</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/GiayNam-01-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 300.000</p>
+                                    <div class="btnSold">Đã bán 30</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/AoSomiCaroNu-01-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 200.000</p>
+                                    <div class="btnSold">Đã bán 29</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="card-img-top" src="../Img/AoThunNamTru-01-300x300.jpg" alt="Card image cap">
+                                <div class="card-body" style="padding: 20px;">
+                                    <p class="card-text" style="margin-bottom: 8px;">₫ 200.000</p>
+                                    <div class="btnSold">Đã bán 29</div>
+                                    <div class="btnRunSold"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                <div class="position-relative">
+                    <div class="swiper-button-next btnNextSlide"></div>
+                    <div class="swiper-button-prev btnPrevSlide"></div>
+                </div>
+                <h3 class="mt-3 mb-3" style="text-transform: uppercase;font-size: 24px;">Danh mục</h3>
+                <div class="row listCategory listCategoryTop">
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Thời trang nam.png">
+                            <p>Thời trang nam</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Điện thoại và phụ kiện.png">
+                            <p>Điện thoại và phụ kiện</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Thiết bị điện tử.png">
+                            <p>Thiết bị điện tử</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Máy tính & Laptop.png">
+                            <p>Máy tính & Laptop</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Máy ảnh - Máy quay phim.png">
+                            <p>Máy ảnh - Máy quay phim</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Đồng hồ.png">
+                            <p>đồng hồ</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Giày dép nam.png">
+                            <p>Giày dép nam</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Thiết bị điện gia dụng.png">
+                            <p>Thiết bị điện gia dụng</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row listCategory">
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Thời trang nữ.png">
+                            <p>Thời trang nữ</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Mẹ & Bé.png">
+                            <p>Mẹ & Bé</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Nhà cửa & Đời sống.png">
+                            <p>Nhà cửa & Đời sống</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Sức khỏe & Sắc đẹp.png">
+                            <p>Sức khỏe & Sắc đẹp</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Giày dép nữ.png">
+                            <p>Giày dép nữ</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Túi ví.png">
+                            <p>Túi ví</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Phụ kiện thời trang.png">
+                            <p>Phụ kiện thời trang</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <img src="../Img/Voucher & Dịch vụ.png">
+                            <p>Voucher & Dịch vụ</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-3 mb-3" style="display: flex;justify-content: space-between;align-items: center;">
+                        <div>
+                            <h3 class=""
+                                style="color: var(--primaryColor--);text-transform: uppercase;font-size: 24px;">Tìm kiếm
+                                hàng đầu</h3>
+                        </div>
+                        <div>
+                            <a href="">Xem tất cả ></a>
+                        </div>
+                    </div>
+                    <div class="grid wide" style="background: #fff;padding: 20px;">
+                        <div class="row">
+                            <div class="col l-2 listSearchTop">
+                                <div class="topSearchIcon">Top</div>
+                                <div class="itemSearchTop">
+                                    <img src="../Img/ban-tron-03-300x300.jpg" class="img-fluid">
+                                    <span>Bán 2k+/tháng</span>
+                                </div>
+                                <div class="textSearchTop">
+                                    <span>Bàn tròn</span>
+                                </div>
+                            </div>
+                            <div class="col l-2 listSearchTop">
+                                <div class="topSearchIcon">Top</div>
+                                <div class="itemSearchTop">
+                                    <img src="../Img/DamTaiTho-02.jpg" class="img-fluid">
+                                    <span>Bán 2k+/tháng</span>
+                                </div>
+                                <div class="textSearchTop">
+                                    <span>Tai thỏ</span>
+                                </div>
+                            </div>
+                            <div class="col l-2 listSearchTop">
+                                <div class="topSearchIcon">Top</div>
+                                <div class="itemSearchTop">
+                                    <img src="../Img/DoNgu-03-300x300.jpg" class="img-fluid">
+                                    <span>Bán 2k+/tháng</span>
+                                </div>
+                                <div class="textSearchTop">
+                                    <span>Đồ ngủ</span>
+                                </div>
+                            </div>
+                            <div class="col l-2 listSearchTop">
+                                <div class="topSearchIcon">Top</div>
+                                <div class="itemSearchTop">
+                                    <img src="../Img/strongbow-03-300x300.jpg" class="img-fluid">
+                                    <span>Bán 2k+/tháng</span>
+                                </div>
+                                <div class="textSearchTop">
+                                    <span>Strongbow</span>
+                                </div>
+                            </div>
+                            <div class="col l-2 listSearchTop">
+                                <div class="topSearchIcon">Top</div>
+                                <div class="itemSearchTop">
+                                    <img src="../Img/GauOm-01-300x300.jpg" class="img-fluid">
+                                    <span>Bán 2k+/tháng</span>
+                                </div>
+                                <div class="textSearchTop">
+                                    <span>Gấu ôm</span>
+                                </div>
+                            </div>
+                            <div class="col l-2 listSearchTop">
+                                <div class="topSearchIcon">Top</div>
+                                <div class="itemSearchTop">
+                                    <img src="../Img/AoThunNamTru-01-300x300.jpg" class="img-fluid">
+                                    <span>Bán 2k+/tháng</span>
+                                </div>
+                                <div class="textSearchTop">
+                                    <span>Áo thun nam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-3 mb-3" style="display: flex;justify-content: space-between;align-items: center;">
+                        <div>
+                            <h3 class=""
+                                style="color: var(--primaryColor--);text-transform: uppercase;font-size: 24px;">gợi ý
+                                hôm nay</h3>
+                        </div>
+                        <div>
+                            <a href="">Xem tất cả ></a>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid wide">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4">
+                                    <a href="../Clients/productsDetails.html" class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Set áo quần thời trang hoàng cung Gong Jinh Yang Seol Radiant
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">900.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật Bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">giảm</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-left"></i>
+                            </a>
+                        </li>
+
+                        <li class="pagination-item pagination-item--active">
+                            <a href="" class="pagination-item__link">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">5</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">14</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-right"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2-4">
+                    <div>
+                        <h3 class="titleFooter">chăm sóc khách hàng</h3>
+                        <ul class="footerLists">
+                            <li class="itemsFooter"><a href="" class="linksFooter">Trung tâm trợ giúp</a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">Hướng dẫn mua hàng</a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">KShop Mail</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div>
+                        <h3 class="titleFooter">giới thiệu</h3>
+                        <ul class="footerLists">
+                            <li class="itemsFooter"><a href="" class="linksFooter">Giới thiệu về KShop và Việt Nam</a>
+                            </li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">Tuyển dụng</a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">Điều khoản</a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">Chính sách bảo mật</a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">Chính hãng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <h3 class="titleFooter">Thanh toán</h3>
+                    <div class="row">
+                        <div class="col l-4" style="padding-bottom: 24px;">
+                            <img src="../Img/icon-payment-01.png" class="img-fluid">
+                        </div>
+                        <div class="col l-4" style="padding-bottom: 24px;">
+                            <img src="../Img/icon-payment-02.png" class="img-fluid">
+                        </div>
+                        <div class="col l-4" style="padding-bottom: 24px;">
+                            <img src="../Img/icon-payment-03.png" class="img-fluid">
+                        </div>
+                        <div class="col l-4">
+                            <img src="../Img/icon-payment-04.png" class="img-fluid">
+                        </div>
+                        <div class="col l-4">
+                            <img src="../Img/icon-payment-05.png" class="img-fluid">
+                        </div>
+                        <div class="col l-4">
+                            <img src="../Img/icon-payment-06.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div>
+                        <h3 class="titleFooter">Theo dõi chúng tôi trên</h3>
+                        <ul class="footerLists">
+                            <li class="itemsFooter"><a href="" class="linksFooter">
+                                    <i class="fab fa-facebook-square fa-2x"></i>Facebook
+                                </a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">
+                                    <i class="fab fa-instagram fa-2x"></i>Instagram
+                                </a></li>
+                            <li class="itemsFooter"><a href="" class="linksFooter">
+                                    <i class="fab fa-linkedin fa-2x"></i>Linkedin
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div>
+                        <h3 class="titleFooter" style="font-size: 13.9px;">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="row">
+                            <div class="col l-6" style="padding-right: 8px;">
+                                <a href="">
+                                    <img src="../Img/QRCode.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col l-6" 
+                            style="display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                padding-left: 0;"
+                            >
+                                <img src="../Img/app-store.png" alt="" class="img-fluid" style="margin-bottom: 4px;">
+                                <img src="../Img/play-store.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="../Library/boostrap4/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
