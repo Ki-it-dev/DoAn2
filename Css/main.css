@@ -413,3 +413,100 @@ footer .linksFooter:hover{
     padding: 8px;
     font-weight: 500;
 }
+
+.informationProducts-btnChoice .iconTick{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.informationProducts-btnChoice .iconTick i{
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+}
+
+.informationProducts-btnChoice .iconTick i::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 24px solid red;
+    border-left: 24px solid transparent;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    z-index: -1;
+}
+
+.informationProducts-btnChoice input{
+    display: none;
+}
+
+.informationProducts-btnChoice label{
+    cursor: pointer;
+    min-width: 5rem;
+    min-height: 2.125rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.25rem 0.75rem;
+    margin: 0 8px 0;
+    color: rgba(0,0,0,.8);
+    text-align: left;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.09);
+    position: relative;
+    background: #fff;
+    outline: 0;
+    word-break: break-word;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.informationProducts-btnChoice label:first-child{
+    margin-left: 0;
+}
+
+.informationProducts-btnChoice input:checked + label,
+.informationProducts-btnChoice input:checked + label .iconTick{
+    display:block;
+    text-align: center;
+    border: 1px solid var(--products-text);
+    color : var(--products-text);
+}
+
+.informationProducts-btnChoice label:hover{
+    border: 1px solid var(--products-text);
+    color : var(--products-text);
+}
+
+.numberUpDownProducts i{
+    border: 1px solid rgba(0,0,0,.09);
+    width: var(--number--);
+    height:var(--number--);
+    line-height: var(--number--);
+    text-align: center;
+    color: rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+.numberUpDownProducts input{
+    outline:none;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.09);
+    width: 64px;
+}
+
+.numberUpDownProducts span{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 8px;
+    line-height: var(--number--);
+}

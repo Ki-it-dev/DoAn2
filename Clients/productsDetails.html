@@ -47,7 +47,7 @@
 
         .swiper-slide img {
             display: block;
-            width: 100%;
+            width: 64%;
             height: 100%;
             object-fit: cover;
         }
@@ -85,11 +85,8 @@
             opacity: 1;
         }
 
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .swiper-button-next, .swiper-button-prev{
+            color: #000;
         }
     </style>
 
@@ -212,19 +209,19 @@
                     <div thumbsSlider="" class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
+                                <img style="width: 100%;" src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
+                                <img style="width: 100%;" src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
+                                <img style="width: 100%;" src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
+                                <img style="width: 100%;" src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
+                                <img style="width: 100%;" src="../Img/Umbrella/img_0636_11b27aef51bf46639eda892ae999fb9b_grande.jpg" />
                             </div>
                         </div>
                     </div>
@@ -303,35 +300,103 @@
                             <img src="../Img/freeShip.png" alt="">
                             Miễn phí vận chuyển
                         </span>
-                        <span>Miễn phí vận chuyển cho đơn hàng trên ₫50.000</span>
+                        <span style="color:rgba(0,0,0,.54);margin: 8px 0;">Miễn phí vận chuyển cho đơn hàng trên ₫50.000</span>
                     </div>
                 </div>
                 <div class="mt-3 mb-3 d-flex informationProducts">
                     <span class="informationProducts-text">Màu sắc</span>
-                    <div class="d-flex informationProducts-btnChoice">
+                    <div class="d-flex informationProducts-btnChoice position-relative">
                         <div class="d-flex">
-                            <label for="">đen</label>
-                            <input type="radio" name="" id="">
+                            <input type="radio" name="1" id="btn-1">
+                            <label for="btn-1">đen
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="1" id="btn-2">
+                            <label for="btn-2">trắng
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="1" id="btn-3">
+                            <label for="btn-3">hồng
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="1" id="btn-4">
+                            <label for="btn-4">xanh
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
                         </div>
                     </div>
                 </div>
                 <div class="mt-3 mb-3 d-flex informationProducts">
                     <span class="informationProducts-text">Size</span>
+                    <div class="d-flex informationProducts-btnChoice position-relative">
+                        <div class="d-flex">
+                            <input type="radio" name="2" id="btnSize-1">
+                            <label for="btnSize-1">L
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="2" id="btnSize-2">
+                            <label for="btnSize-2">M
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="2" id="btnSize-3">
+                            <label for="btnSize-3">XL
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="radio" name="2" id="btnSize-4">
+                            <label for="btnSize-4">XXL
+                                <div class="iconTick">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="mt-3 mb-3 d-flex informationProducts">
                     <span class="informationProducts-text">Số lượng</span>
-                    <div class="d-flex">
+                    <div class="d-flex numberUpDownProducts" style="margin-left: 8px;">
                         <i class="fas fa-minus"></i>
                         <input type="text" name="" id="" value="1">
                         <i class="fas fa-plus"></i>
+                        <span>2000 sản phẩm có sẵn</span>
                     </div>
                 </div>
                 <div class="mt-3 mb-3 d-flex">
-                    <div class="d-flex">
-                        <i class="fas fa-cart-plus"></i>
+                    <div class="d-flex cartAdd">
+                        <a href="">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Thêm vào giỏ hàng</span>
+                        </a>
                     </div>
-                    <div class="d-flex">
-                        Mua ngay
+                    <div class="d-flex buyProductsBtn">
+                        <a href="">
+                            Mua ngay
+                        </a>
                     </div>
                 </div>
             </div>

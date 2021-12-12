@@ -30,6 +30,8 @@ body{
 
     --products-text : #ee4d2d;
     --products-border : rgb(219, 219, 219);
+    /* Products Up Down */
+    --number-- : 32px;
 }
 
 a:hover{
@@ -121,4 +123,15 @@ ul{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+.cartAdd a,.buyProductsBtn a{
+    padding: 16px;
+    background: var(--products-text);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.buyProductsBtn a{
+    margin-left: 12px;
 }
