@@ -135,3 +135,11 @@ ul{
 .buyProductsBtn a{
     margin-left: 12px;
 }
+
+.titleProducts{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 12px;
+    color: #000;
+    background: rgba(0,0,0,.02);
+}
