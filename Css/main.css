@@ -571,3 +571,134 @@ footer .linksFooter:hover{
     height: 40px;
     line-height: 27px;
 }
+
+.cartMain{
+    display: flex;
+    margin: 20px 0 20px 12px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+}
+
+.cartProductLeft  img{
+    width: 240px;
+    height:304px;
+    object-fit: cover;
+}
+
+.cartProductRight{
+    margin-left: 20px;
+}
+
+.cartProductRight h3{
+    font-size:21px;
+}
+
+.cartProductRight span{
+    color: #808080;
+    font-size: 18px;
+}
+
+.cartProductRight .cartNumberSize{
+    margin: 20px 0;
+}
+
+.cartProductRight .cartNumberSize .ui.selection.dropdown{
+    min-width: 16em;
+}
+
+.cartProductRight .status{
+    color: #f15e2c;
+}
+
+.cartProductRight .priceProducts span{
+    color: #f15e2c;
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.cartProductRight .heartCart,
+.cartProductRight .heartTrash{
+    width: 43%;
+    padding: 16px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cartProductRight .heartTrash{
+    margin-left: 20px;
+}
+
+.billCart .titleBill h3{
+    font-size: 24px;
+    padding: 11px 0;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.billCart .billPromotion input,
+.billCart .billPromotion button{
+    outline: none;
+    font-size: 18px;
+}
+
+.billCart .billPromotion input{
+    border: 1px solid rgba(0,0,0,.09);
+    flex-grow: 1;
+    padding-left:12px;
+}
+
+.billCart .billPromotion button{
+    border: none;
+    padding: 12px;
+    text-transform: uppercase;
+    background: #f15e2c;
+    color: #fff;
+    font-size: 16px;
+}
+
+.billCart .billPromotion{
+    padding-bottom: 20px;
+    border-bottom: 2px dashed rgb(0 0 0 / 10%);
+}
+
+.billCart .priceBill{
+    padding: 20px 0;
+    font-size: 14px;
+    border-bottom: 2px dashed rgb(0 0 0 / 10%);
+}
+
+.billCart .priceBill span{
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.billCart .billPriceAll{
+    padding: 20px 0;
+}
+
+.billCart .billPriceAll h4{
+    margin: 0;
+    font-size: 24px;
+}
+
+.billCart .billComplete{
+    background: #f15e2c;
+    padding: 20px;
+    text-align: center;
+}
+
+.billCart .billComplete button{
+    outline: none;
+    border: none;
+    background: #f15e2c;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
